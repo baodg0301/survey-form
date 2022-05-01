@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">FPoly Survey Form</h1>
+    <p id="description">
+        Thank you for taking your time to help us improve the platform
+    </p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name
+            <input type="text" name="name" id="name" placeholder="enter your fullname" required>
+        </label>
+        <label for="email" id="email-label">Email
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+        </label>
+        <label for="number" id="number-label">Age
+            <input type="number" name="number" id="number" placeholder="Age" min="10" max="99" required>
+        </label>
+        <div>
+            <p>Describe your characteristics</p>
+            <select id="dropdown">
+                <option disabled selected value>characteristics</option>
+                <option value="humorous">Humorous</option>
+                <option value="hilarious">Hilarious</option>
+            </select>
+        </div>
+        <label>
+            <input type="radio" name="dateOfBirth" value="2001">2001
+        </label>
+        <label>
+            <input type="radio" name="dateOfBirth" value="2002">2002
+        </label>
+
+        <div>
+            <p>What do you like</p>
+            <label>
+                <input type="checkbox" value="cats" checked>cats
+            </label>
+            <label>
+                <input type="checkbox" value="dogs">dogs       
+            </label>
+        </div>
+
+        <div>
+            <p>Any comments or suggestions</p>
+            <textarea name="comments">Enter your comments here....</textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
